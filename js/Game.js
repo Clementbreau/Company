@@ -461,7 +461,7 @@ Theodoric.Game.prototype = {
         player.body.collideWorldBounds = true
         player.alive = true;
 
-        player.name = 'Theodoric';
+        player.name = 'Seb';
         player.level = 1;
 
         player.health = 100;
