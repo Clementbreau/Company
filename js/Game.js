@@ -187,7 +187,7 @@ Theodoric.Game.prototype = {
                 this.generateGold(enemy);
             } else if (this.rng(0, 2)) {
                 this.generatePotion(enemy);
-                this.notification = 'The ' + enemy.name + ' dropped a potion!';
+                this.notification = 'The ' + enemy.name + ' a laché une potion!';
             }
             this.xp += enemy.reward;
             this.generateEnemy(this.enemies);
