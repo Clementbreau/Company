@@ -410,32 +410,32 @@ Theodoric.Game.prototype = {
                 gain = this.player.level + Math.floor(Math.random() * 10);
                 this.gold += collectable.value;
                 this.goldSound.play();
-                this.notification = 'You pick up ' + collectable.value + ' gold.';
+                this.notification = 'Tu as rammassé ' + collectable.value + ' gold.';
                 collectable.destroy();
             } else if (collectable.name === 'chest') {
                 collectable.animations.play('open');
                 this.gold += collectable.value;
                 this.goldSound.play();
-                this.notification = 'You open a chest and find ' + collectable.value + ' gold!';
+                this.notification = 'Tu as ouvert un coffre et a trouvé ' + collectable.value + ' golds !';
                 collectable.lifespan = 1000;
             } else if (collectable.name === 'healthPotion') {
                 player.health += collectable.value;
-                this.notification = 'You consume a potion, healing you for ' + collectable.value + ' health.';
+                this.notification = 'Tu as consomé une potion qui t as regeneré ' + collectable.value + ' health.';
                 this.potionSound.play();
                 collectable.destroy();
             } else if (collectable.name === 'vitalityPotion') {
                 player.vitality += collectable.value;
-                this.notification = 'You consume a potion, increasing your vitality by ' + collectable.value + '!';
+                this.notification = 'Tu as consomé une potion qui t as augmenté ta vitalité de ' + collectable.value + '!';
                 this.potionSound.play();
                 collectable.destroy();
             } else if (collectable.name === 'strengthPotion') {
                 player.strength += collectable.value;
-                this.notification = 'You consume a potion, increasing your strength by ' + collectable.value + '!';
+                this.notification = 'Tu as consomé une potion qui t as augmenté ta force de ' + collectable.value + '!';
                 this.potionSound.play();
                 collectable.destroy();
             } else if (collectable.name === 'speedPotion') {
                 player.speed += collectable.value;
-                this.notification = 'You consume a potion, increasing your speed by  ' + collectable.value + '!';
+                this.notification = 'Tu as consomé une potion qui t as augmenté ta vitesse de ' + collectable.value + '!';
                 this.potionSound.play();
                 collectable.destroy();
             }
